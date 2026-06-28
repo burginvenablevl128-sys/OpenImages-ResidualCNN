@@ -1,0 +1,3 @@
+﻿model,accuracy,macro_f1,note
+MLP(flatten pixels),0.1,0.05555555555555555,Pilot NumPy experiment on downloaded Open Images thumbnails
+CNN-local features,0.2,0.09722222222222221,Pilot NumPy experiment on downloaded Open Images thumbnails
