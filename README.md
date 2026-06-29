@@ -50,8 +50,6 @@ python -m src.train_torch
   data/processed/                 样本索引 openimages_pilot_images.csv
   results/                        指标、训练日志、模型对比结果
   figures/                        论文图像
-  docs/                           爬虫过程说明与课程要求覆盖说明
-  paper/                          最终 Word 论文
 ```
 
 ## 当前 Pilot 数据与结果
