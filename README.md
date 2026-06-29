@@ -2,7 +2,7 @@
 
 本项目围绕人工智能课程论文的算法复现任务完成：从 Open Images V7 公开视觉数据库下载官方元数据，爬取真实图像样本，构建图像分类数据集，比较 MLP 基线与卷积特征模型，并提供可扩展的 Residual CNN 完整训练代码。
 
-交付内容包括：爬虫代码、数据处理代码、模型复现代码、实验结果文件、学术可视化图片、Word 论文和论文自动生成脚本。当前压缩包内保存的是便于课程检查快速运行的 Pilot 子集；如果需要扩大实验规模，可把 `--per-class` 调整为 `1000` 或更高。
+内容包括：爬虫代码、数据处理代码、模型复现代码、实验结果文件、学术可视化图片、Word 论文和论文自动生成脚本。当前压缩包内保存的是便于课程检查快速运行的 Pilot 子集；如果需要扩大实验规模，可把 `--per-class` 调整为 `1000` 或更高。
 
 ## 一键运行
 
@@ -10,7 +10,7 @@
 
 ```powershell
 python -m pip install -r requirements.txt
-python main.py --all --per-class 8
+python main.py --all --per-class 7
 ```
 
 该命令会依次完成：
@@ -19,19 +19,6 @@ python main.py --all --per-class 8
 2. 根据目标类别爬取图像缩略图。
 3. 运行 NumPy 快速复现实验。
 4. 生成论文可视化图片。
-5. 生成最终 Word 论文。
-
-如果只重新生成论文：
-
-```powershell
-python main.py --report
-```
-
-如果只重新生成图片：
-
-```powershell
-python main.py --figures
-```
 
 完整 PyTorch Residual CNN 训练入口：
 
