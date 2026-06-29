@@ -31,7 +31,7 @@
 ## 运行命令
 
 ```powershell
-python main.py --crawl --per-class 8
+python main.py --crawl --per-class 7
 ```
 
 若希望扩大数据规模，可将 `--per-class` 调整为 1000 或更高：
