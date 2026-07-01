@@ -1,0 +1,7 @@
+numpy>=1.24
+pillow>=10.0
+pandas>=2.0
+python-docx>=1.1.0
+
+# Optional for full Residual CNN training:
+# torch>=2.0

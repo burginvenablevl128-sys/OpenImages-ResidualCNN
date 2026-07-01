@@ -1,0 +1,17 @@
+Open Images V7 pilot subset download summary
+Target classes: 12
+Requested per class: 8
+Downloaded images: 75
+Failures: 21
+Cat,猫,7
+Dog,狗,6
+Car,汽车,8
+Bicycle,自行车,6
+Motorcycle,摩托车,6
+Bird,鸟,7
+Horse,马,5
+Boat,船,5
+Airplane,飞机,6
+Chair,椅子,6
+Truck,卡车,6
+Flower,花,7
