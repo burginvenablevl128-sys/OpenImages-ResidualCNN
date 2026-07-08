@@ -4,21 +4,6 @@
 
 内容包括：爬虫代码、数据处理代码、模型复现代码、实验结果文件、学术可视化图片、Word 论文和论文自动生成脚本。当前压缩包内保存的是便于课程检查快速运行的 Pilot 子集；如果需要扩大实验规模，可把 `--per-class` 调整为 `1000` 或更高。
 
-## 一键运行
-
-在项目根目录执行：
-
-```powershell
-python -m pip install -r requirements.txt
-python main.py --all --per-class 7
-```
-
-该命令会依次完成：
-
-1. 下载 Open Images 官方元数据。
-2. 根据目标类别爬取图像缩略图。
-3. 运行 NumPy 快速复现实验。
-4. 生成论文可视化图片。
 
 完整 PyTorch Residual CNN 训练入口：
 
@@ -41,10 +26,8 @@ python -m src.train_torch
     torch_models.py               MLP 与 Residual CNN 的 PyTorch 模型定义
     train_torch.py                完整 PyTorch 训练与评估入口
     visualization.py              论文可视化图片生成
-    report_builder.py             Word 论文自动生成脚本
   scripts/
     crawl_openimages.py           单独运行爬虫的脚本
-    build_report.py               单独生成 Word 论文的脚本
   data/raw/                       Open Images 官方 CSV 元数据
   data/images/                    爬取得到的真实 Open Images 图像缩略图
   data/processed/                 样本索引 openimages_pilot_images.csv
